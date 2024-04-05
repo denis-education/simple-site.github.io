@@ -1,0 +1,240 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+*, *:before, *:after{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+/*| Navigation |*/
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+  z-index: 1;
+}
+  nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+  }
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+
+    nav ul li:hover{background: rgba(0,0,0,.15);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+      nav ul li a{
+        display: block; 
+        padding: 30px 20px;
+        color: #4D3474; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav ul ul{
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+      }
+        nav ul ul li{float: none; position: relative;}
+          nav ul ul li a {
+            padding: 15px 30px; 
+            border-bottom: 1px solid rgba(0,0,0,.05);
+          }
+          nav ul ul ul {
+            position: absolute; 
+            left: 100%; 
+            top:0;
+          }
+
+*{
+    margin: 0;/*обнуление отступов*/
+    padding: 0;/*обнуление полей*/
+    box-sizing: border-box;/*метод расчета размеров бокса*/
+    font-family: 'Lato', sans-serif;/*название шрифта*/
+}
+
+body {
+    display:flex;/*флексбокс сетка*/
+    flex-direction:column;/*направление главной оси*/
+    justify-content: flex-end;/*элементы в конце контейнера*/
+    min-height: 100vh;
+    background-color: #dbd3f9; /* Цвет фона веб-страницы */
+}
+
+footer{
+    position: relative;/*относительное позиционирование*/
+    width: 100%;/*на всю ширину*/
+    padding: 20px 50px;/*поля для контента*/
+    background: #fff;/*цвет футера*/
+    display: flex;
+    justify-content: center;/*в центре по горизонтали*/
+    align-items: center;/*в центре по вертикали*/
+    flex-direction: column;
+    margin-top: 100px;/*отступ сверху*/
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+
+.menu li{
+        list-style: none;/*удалить черные маркеры*/
+}
+
+.menu li a {
+    font-size: 1.2em;/*размер ссылок меню*/
+    color: #4D3474;/*цвет ссылок меню*/
+    opacity: 0.75;/*значение прозрачности*/
+    margin: 0 15px;
+    text-decoration: none;/*ссылка без подчеркивания*/
+    display: inline-block;
+}
+
+.menu li a:hover {
+    opacity: 1;
+}
+
+footer p {
+    color: #4D3474;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.forma{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.content{
+  padding-bottom: 60px;
+}
+
+.header{
+  line-height: 1;
+  margin-top: 100px;
+  text-align: left;
+  margin-left: 150px;
+  padding: 20px 10px;
+}
+
+.text{
+  margin-left: 150px;
+  margin-top: 0,5em;
+  margin-bottom: 2em;
+  padding: 0px 10px; 
+  margin-right: 185px;
+  font-size: large;
+  line-height: 1.5;
+}
+
+div {
+  margin-top: 1em;
+  text-align: justify;
+}
+
+p {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #7958ad;
+	font-size: 15px;
+	background: #fff!important;
+
+}
+
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #7958ad;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #7958ad;
+  color:#fff;
+}
+
+.table td {
+	padding: 7px;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	font-size: 20px;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(even){
+  background: #e4e4e4!important;
+}
+
+ol {
+  padding: 10px 10px;
+  margin-left: 50px;
+} 
+ol li {
+  padding: 7px 10px;
+}
+
+.gromofon{
+  float: right; /* Выравнивание по левому краю */
+  margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
+.text1{
+  margin-right: 300px;
+}
+
+.text2{
+  margin-bottom: 100px;
+}
+
+.video{
+  display: block;
+  float: left;
+  margin: 0 auto;
+  margin-top: 3.8vw;
+}
+
+.privacy{
+  float:left;
+  margin:7px 25px 7px 0;
+}
